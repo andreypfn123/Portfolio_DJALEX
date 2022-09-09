@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(70deg,blue,rgb(0, 0, 66), black);
+}
+
+.cabecalho{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
