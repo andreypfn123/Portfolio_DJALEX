@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
-body{
-    background: linear-gradien(90deg,black, black,rgb(0, 0, 134));
+.cabecalho-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+
 }
