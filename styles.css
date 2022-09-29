@@ -4,8 +4,111 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: righteous;
+}
+header {
+    background-color: black;
+    border-bottom: 2px solid white;
+}
+.header-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nome-dj{
+    font-weight: 400;
+    color: white;
+    animation: color 4s linear infinite;
+    -webkit-animation: color 4s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        color: white;
+    }
+    50%{
+        color: blue;
+    }
+    100%{
+        color: white;
+    }
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    font-weight: bold;
+    border: none;
 }
 
-body{
-    background: linear-gradient(90deg, black,black, rgb(7, 7, 88));
+.item-edit{
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 10px;
+    background-image: linear-gradient(180deg, black 0%);
+    background-size: 200% auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+}
+
+.item-edit:hover{
+    color: black;
+    background-color: rgb(250, 250, 250);
+    -webkit-transition: all 0.4s linear;
+    box-shadow: 0 0 50px blue;
+}
+
+body {
+    background-color: black;
+    background-image: url(/img/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: center;
+    background-position-y: 25px;
+}
+
+.titulo-e-descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 60px;
+}
+.foto_alex{
+    width: 400px;
+    border-radius: 360px;
+    padding: 20px;
+}
+h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+.servicos_solid{
+    margin-top: 50px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.duas-torres-foto{
+    display: block;
+    margin: 0px auto;
+}
+.servicos{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 40px;
 }
